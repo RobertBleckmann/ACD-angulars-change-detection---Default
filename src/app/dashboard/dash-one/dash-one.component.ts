@@ -1,11 +1,4 @@
-import {
-  AfterViewChecked,
-  Component,
-  DoCheck,
-  OnChanges,
-  OnInit,
-} from '@angular/core';
-import { interval } from 'rxjs/internal/observable/interval';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-dash-one',
