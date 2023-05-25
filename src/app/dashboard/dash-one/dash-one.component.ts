@@ -15,8 +15,6 @@ import { interval } from 'rxjs/internal/observable/interval';
 export class DashOneComponent {
   constructor() {}
 
-  public readonly visible$ = interval(4000);
-
   logChangeDetection() {
     console.log('Dash 1 rendered');
     return true;
