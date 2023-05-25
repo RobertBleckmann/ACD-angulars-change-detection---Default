@@ -1,16 +1,20 @@
-import { Component, DoCheck, OnInit } from '@angular/core';
+import {
+  AfterViewChecked,
+  Component,
+  DoCheck,
+  OnChanges,
+  OnInit,
+} from '@angular/core';
 
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css'],
 })
-export class DashboardComponent implements OnInit, DoCheck {
+export class DashboardComponent implements AfterViewChecked {
   constructor() {}
 
-  ngOnInit() {}
-
-  ngDoCheck() {
+  ngAfterViewChecked() {
     console.log('Dashboard');
   }
 }
