@@ -5,6 +5,7 @@ import {
   OnChanges,
   OnInit,
 } from '@angular/core';
+import { interval } from 'rxjs/internal/observable/interval';
 
 @Component({
   selector: 'app-dash-one',
@@ -13,6 +14,8 @@ import {
 })
 export class DashOneComponent {
   constructor() {}
+
+  public readonly visible$ = interval(4000);
 
   logChangeDetection() {
     console.log('Dash 1 rendered');
