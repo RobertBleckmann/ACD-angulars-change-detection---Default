@@ -11,10 +11,11 @@ import {
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css'],
 })
-export class DashboardComponent implements AfterViewChecked {
+export class DashboardComponent {
   constructor() {}
 
-  ngAfterViewChecked() {
-    console.log('Dashboard');
+  logChangeDetection() {
+    console.log('Dashboard rendered');
+    return true;
   }
 }

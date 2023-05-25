@@ -11,14 +11,11 @@ import {
   templateUrl: './dash-one.component.html',
   styleUrls: ['./dash-one.component.css'],
 })
-export class DashOneComponent implements AfterViewChecked {
+export class DashOneComponent {
   constructor() {}
 
-  ngAfterViewChecked(): void {
-    console.log('Dash 1');
-  }
-
-  doSomething() {
-    return;
+  logChangeDetection() {
+    console.log('Dash 1 rendered');
+    return true;
   }
 }

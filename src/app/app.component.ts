@@ -11,10 +11,11 @@ import {
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent implements AfterViewChecked {
+export class AppComponent {
   constructor() {}
 
-  ngAfterViewChecked() {
-    console.log('App Component');
+  logChangeDetection() {
+    console.log('App Component rendered');
+    return true;
   }
 }
